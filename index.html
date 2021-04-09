@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mon Frigo</title>
+    <link rel="stylesheet" type="text/css" href="Style/Frigo.css" media="all" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Style/PetiteFenetre.css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <span>Agrandir la fenêtre</span>
+    </div>
+
+    <div id="frigo">
+      <div id="entete">
+        <div id="divlogo">
+          <img src=Style/img/logo_small.png id="logo">
+        </div>
+        <input type="button" id="accueil" value="Accueil" />
+        <input type="button" id="mesproduits" value="Mes Produits" />
+      </div>
+
+      <div id="milieu">
+        <div type="submit" id="produits">
+          <img src=Style/img/frigoferme.jpg id="frigoferme">
+        </div>
+        <input
+          id="search"
+          type="text"
+          placeholder="Recherche ..."
+          autocomplete="off"
+        />
+        <div id="liste">
+          <table id="tableau"></table>
+        </div>
+
+        <input type="button" id="recherche" value="" />
+        <input type="button" id="newProduits" value="" />
+      </div>
+      <form id="ajout">
+        <p>Ajouter un Produit</p>
+        <select id="nomToAdd"></select>
+        <input
+          type="text"
+          id="nouveauProduit"
+          placeholder="Nom du Produit"
+          autocomplete="off"
+        />
+        <input type="number" min="1" id="qte" placeholder="Quantité" />
+        <input type="button" id="addProduits" value="Ajouter" />
+      </form>
+    </div>
+
+    <script src="Script/Frigo.js"></script>
+  </body>
+</html>
